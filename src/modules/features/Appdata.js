@@ -29,7 +29,7 @@ function Appdata() {
                                     <img src={c.image} alt={c.id}/>
                                     <h5 className="card-title">Name:{c.username}</h5>
                                     <h3>Age:{c.age}</h3>
-                                    <Link to="userDetails" className='btn btn-success'>Show Details</Link>
+                                    <Link to={"userdetails/"+c.id} className='btn btn-success'>Show Details</Link>
                                 </div>
                             </div> 
                         </div>

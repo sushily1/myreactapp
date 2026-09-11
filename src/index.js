@@ -39,7 +39,7 @@ root.render(
 
           <Route path="users" element={<Appdata />}>
             
-            <Route path="userdetails" element={<UserDetails />} />
+            <Route path="users/userdetails/:id" element={<UserDetails />} />
 
             <Route path="*" element={<Errorpage />} />
           </Route>
