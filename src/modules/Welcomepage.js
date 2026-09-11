@@ -25,10 +25,10 @@ function Welcomepage() {
                 </div>
             </div>
             <div className="row">
-                {myapp.map((d,x) => {
+                {myapp.map((d, x) => {
                     return (
                         <div className="col-6 col-md-3" key={x}>
-                            <Link to={"/"+d.approute} className="card text-center p-4 text-decoration-none shadow mt-4">
+                            <Link to={"/" + d.approute} className="card text-center p-4 text-decoration-none shadow mt-4">
                                 <h1 className='text-info'>
                                     <RiDashboard3Fill />
                                 </h1>

@@ -7,7 +7,7 @@ function Appsidebar() {
 
             <Link
                 to="/"
-                className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom"
+                className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none-bottom"
             >
                 <span className="fs-5 fw-semibold"></span>
             </Link>

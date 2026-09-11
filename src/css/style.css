@@ -78,10 +78,6 @@ color:white;
 }
 
 
-
-
-
-
 .dropdown-toggle { outline: 0; }
 
 .btn-toggle {
@@ -137,4 +133,11 @@ color:white;
 .cmt
 {
     margin-top:80px;
+}
+
+.gsk{
+ 
+ height:100%;
+ width:100%;
+border: none;
 }

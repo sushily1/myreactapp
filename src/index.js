@@ -15,12 +15,14 @@ import Usermainpage from "./modules/users/components/Usermainpage";
 import Userreports from "./modules/users/components/Userreports";
 import Appdata from "./modules/features/Appdata";
 import UserDetails from "./modules/features/UserDetails";
+import Userregistor from "./modules/users/auth/Userregistor";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter> 
       <Routes>
     
         <Route path="/" element={<Applogin />} />
@@ -37,14 +39,14 @@ root.render(
 
           <Route path="users" element={<Appdata />}>
             
-            <Route path="userdetails/:id" element={<UserDetails />} />
+            <Route path="userdetails" element={<UserDetails />} />
 
             <Route path="*" element={<Errorpage />} />
           </Route>
 
           <Route path="*" element={<Errorpage />} />
         </Route>
-
+         <Route path="register" element={<Userregistor/>}></Route>
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </BrowserRouter>
