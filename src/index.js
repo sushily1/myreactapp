@@ -16,6 +16,7 @@ import Userreports from "./modules/users/components/Userreports";
 import Appdata from "./modules/features/Appdata";
 import UserDetails from "./modules/features/UserDetails";
 import Userregistor from "./modules/users/auth/Userregistor";
+import Charts from "./modules/users/components/Charts";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -40,6 +41,7 @@ root.render(
           <Route path="users" element={<Appdata />}>
             
             <Route path="users/userdetails/:id" element={<UserDetails />} />
+            <Route path='mycharts' element={<Charts/>}/>
 
             <Route path="*" element={<Errorpage />} />
           </Route>

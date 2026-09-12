@@ -1,11 +1,21 @@
 import React from 'react'
+import Childpage from './Childpage'
 
+function Userreport() {
+  const username = "sushil";
 
-function Userreports() {
+  const msg = () => {
+    alert("welcome to props driling");
+  }
+
+  
+
   return (
-    <div>
-      Userreports
+    <div>Userreport
+      <Childpage xyz={username} myfunc={msg}></Childpage>
+
     </div>
   )
 }
-export default Userreports;
+
+export default Userreport

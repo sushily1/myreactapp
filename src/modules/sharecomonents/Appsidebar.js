@@ -4,25 +4,13 @@ import { Link } from 'react-router-dom'
 function Appsidebar() {
     return (
         <div className="flex-shrink-0 p-3 border-end fixed-top">
-
-            <Link
-                to="/"
-                className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none-bottom"
-            >
+            <Link to="/" className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none-bottom" >
                 <span className="fs-5 fw-semibold"></span>
             </Link>
-
             <ul className="list-unstyled ps-0">
-
                 <li className="mb-1">
-                    <button
-                        className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#home-collapse"
-                        aria-expanded="false"
-                    >
-                        Home
-                    </button>
+                    <button className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse"
+                        aria-expanded="false" >  Home  </button>
 
                     <div className="collapse" id="home-collapse">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -39,6 +27,11 @@ function Appsidebar() {
                             <li>
                                 <Link to="report" className="link-body-emphasis d-inline-flex text-decoration-none rounded">
                                     Reports
+                                </Link>
+                            </li>
+                                <li>
+                                <Link to="mycharts" className="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                    Graph
                                 </Link>
                             </li>
                         </ul>
