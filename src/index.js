@@ -23,32 +23,32 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter> 
+    <BrowserRouter>
       <Routes>
-    
+
         <Route path="/" element={<Applogin />} />
 
         <Route path="/applist" element={<Welcomepage />} />
-    
+
         <Route path="/users" element={<Userlogin />} />
 
         <Route path="/dashboard" element={<Landingpage />}>
-          
+
           <Route index element={<Usermainpage />} />
 
           <Route path="reports" element={<Userreports />} />
 
           <Route path="users" element={<Appdata />}>
-            
+
             <Route path="users/userdetails/:id" element={<UserDetails />} />
-            <Route path='mycharts' element={<Charts/>}/>
 
             <Route path="*" element={<Errorpage />} />
           </Route>
+          <Route path='mycharts' element={<Charts />} />
 
           <Route path="*" element={<Errorpage />} />
         </Route>
-         <Route path="register" element={<Userregistor/>}></Route>
+        <Route path="register" element={<Userregistor />}></Route>
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </BrowserRouter>
